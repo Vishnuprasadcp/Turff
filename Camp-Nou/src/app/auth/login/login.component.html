@@ -1,0 +1,23 @@
+<div class="root">
+    <div class="body displaycenter ">
+        <form>
+            <div class="header">
+                <h2 class="text-center"><b>CampNou</b></h2>
+            </div>
+            <label class="pt-4" for="mailId">Email</label>
+            <input class="form-control" type="text" [(ngModel)]="mailId" [placeholder]="mail" name="mailId" required>
+
+            <label class="pt-4" for="pswd">Password</label>
+            <input class="form-control " type="password" [(ngModel)]="pswd" placeholder="password" name="pswd" required>
+
+            <div class="text-center mt-3">
+                <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+            </div>
+
+            <div class="text-center mt-3">
+                <p class="me-5" style="align-items:baseline;">Don't have an account? <button class="ms-5 btn btn-primary"><a class="link" href="register">Register</a></button></p>
+            </div>
+        </form>
+    </div>
+
+</div>

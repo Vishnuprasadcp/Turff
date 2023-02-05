@@ -1,0 +1,34 @@
+<div class="root">
+
+    <div class="body displaycenter ">
+      <form (ngSubmit)=registerfun() [formGroup]="registerForm">
+        <div class="header">
+          <h2 class="text-center"><b>CampNou</b></h2>
+        </div>
+        <label class="pt-4" for="uname">Name</label>
+        <input class="form-control" type="text" placeholder="Enter Your Name" formControlName="uname" name="uname">
+  
+        <label class="pt-4" for="mail">Email</label>
+        <input class="form-control " type="text" placeholder="Enter Your Email address" formControlName="mail"
+          name="mail">
+  
+        <label class="pt-4" for="mobile">Mobile</label>
+        <input class="form-control " type="text"placeholder="Mobile" formControlName="mobile" name="mobile" required>
+  
+        <label class="pt-4" for="pswd">Password</label>
+        <input class="form-control " type="password" placeholder="Password" formControlName="pswd" name="pswd" required>
+  
+        <label class="pt-4" for="pswd2">Confirm Password</label>
+        <input class="form-control " type="password" placeholder="Password" formControlName="pswd2" name="pswd2" required>
+  
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+  
+        <div class="text-center mt-3 ">
+          <p style="align-items:baseline;">Already a User? <button type="submit" class="btn btn-primary"><a class="link" href="">Login</a></button></p>
+        </div>
+      </form>
+    </div>
+  
+  </div>
