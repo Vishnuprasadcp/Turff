@@ -20,8 +20,7 @@ export class RegisterComponent {
     uname: ['', [Validators.required]],
     mail: ['', [Validators.required]],
     mobile: ['', [Validators.required]],
-    pswd: ['', [Validators.required]],
-    pswd2: ['', [Validators.required]]
+    pswd: ['', [Validators.required]]
   })
 
   constructor(private ds: AuthserviceService, private router: Router, private fb: FormBuilder) { }
@@ -34,7 +33,7 @@ export class RegisterComponent {
     var email = this.registerForm.value.mail
     var mob = this.registerForm.value.mobile
     var password = this.registerForm.value.pswd
-    var cpassword = password
+    var cpassword =  this.registerForm.value.pswd
     console.log("1",uname, email, mob, password,cpassword)
 
     if (this.registerForm.valid) {
