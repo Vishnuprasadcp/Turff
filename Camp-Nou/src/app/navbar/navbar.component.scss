@@ -1,5 +1,17 @@
-.user-title{
-    font-family:Arial, Helvetica, sans-serif;
+.user-title {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
 
+.trans {
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.offcanvas{
+    max-width: 300px;
+}

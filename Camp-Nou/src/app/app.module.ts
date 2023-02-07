@@ -8,7 +8,11 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { MatchesModule } from './matches/matches.module';
+import { ItemsComponent } from './items/items.component';
+import { PremiumComponent } from './premium/premium.component';
+import { StoreComponent } from './store/store.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,15 +20,17 @@ import { MatchesModule } from './matches/matches.module';
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ItemsComponent,
+    PremiumComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    MatchesModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
