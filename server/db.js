@@ -20,10 +20,29 @@ const Unicode = mongoose.model('Unicode',{
     nextid:Number
 })
 
-const Matches = mongoose.model('Matches',{
-    user_code:Number,
+const Cricket = mongoose.model('Cricket',{
     Date:String,
-    Time_Slot:String
+    Time_Slot:String,
+    name:String,
+    mobile:Number
+})
+const Football = mongoose.model('Football',{
+    Date:String,
+    Time_Slot:String,
+    name:String,
+    mobile:Number
+})
+const Badminton = mongoose.model('Badminton',{
+    Date:String,
+    Time_Slot:String,
+    name:String,
+    mobile:Number
+})
+const TableTennise = mongoose.model('TableTennise',{
+    Date:String,
+    Time_Slot:String,
+    name:String,
+    mobile:Number
 })
 
-module.exports={User,Unicode,Matches}
+module.exports={User,Unicode,Cricket,Football,Badminton,TableTennise}

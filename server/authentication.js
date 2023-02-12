@@ -65,13 +65,15 @@ const login = (email, password) => {
                 currentname = data.name
                 currentusercode = data.user_code
                 currentemail = data.email
+                currentmobile = data.mobile
                 return {
                     statuscode: 200,
                     status: true,
                     message: "login successful",
                     currentname,
                     currentusercode,
-                    currentemail
+                    currentemail,
+                    currentmobile
                 }
             } else {
                 return {

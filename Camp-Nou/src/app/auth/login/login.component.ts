@@ -28,11 +28,11 @@ export class LoginComponent implements OnInit {
 
       .subscribe((result: any) => {
         console.log(result)
-        alert(result.message)
+        // alert(result.message)
         localStorage.setItem("Email", JSON.stringify(result.currentemail))
         localStorage.setItem("Name", JSON.stringify(result.currentname))
         localStorage.setItem("Usercode", JSON.stringify(result.currentusercode))
-        this.router.navigateByUrl('dashboard')
+        this.router.navigateByUrl('home')
       }, (result: any) => {
         alert(result.error.message)
       })
